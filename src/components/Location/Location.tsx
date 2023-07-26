@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react'
-import { Location } from './types'
-import Reviews from 'components/Reviews'
+import { ILocation } from './types'
+import Reviews from '../Reviews'
 import './Location.scss'
 
-const Location = (loc: Location): ReactNode => (
+const Location = (loc: ILocation): ReactNode => (
   <div className='Location'>
     <div className='Location__title'>
       {loc.name} (Id: {loc.id}, rating: {loc.overallRating})

@@ -1,4 +1,4 @@
-import { ReviewShape } from 'components/Reviews'
+import { ReviewShape } from '../Reviews'
 
 export type Form = Pick<ReviewShape, 'id' | 'comment'> & { rating: string }
 

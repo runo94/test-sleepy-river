@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react'
 import { LazyQueryExecFunction } from '@apollo/client'
-import { ApiShape } from 'api'
-import { Location } from 'components/Location'
+import { ApiShape } from '../../api'
+import { ILocation } from '../Location'
 
 export default class LocationBoxService {
   static fetchLocation = ({
@@ -12,7 +12,7 @@ export default class LocationBoxService {
   }: {
     lastLocationId: string
     getLocation: LazyQueryExecFunction<ApiShape.GetLocationData, ApiShape.GetLocationInput>
-    setLocation: Dispatch<SetStateAction<Location | undefined>>
+    setLocation: Dispatch<SetStateAction<ILocation | undefined>>
     setShouldReload: Dispatch<SetStateAction<boolean>>
   }) =>
     void getLocation({ variables: { id: lastLocationId } }).then(res => {

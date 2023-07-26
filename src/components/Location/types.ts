@@ -1,6 +1,6 @@
-import { ReviewShape } from 'components/Reviews'
+import { ReviewShape } from '../Reviews'
 
-export interface Location {
+export interface ILocation {
   id: string
   name: string
   description: string

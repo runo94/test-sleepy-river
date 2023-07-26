@@ -4,14 +4,14 @@ import {
   locationBoxContextDefault,
   LocationBoxContextProviderProps,
 } from './types'
-import { Location } from 'components/Location'
+import { ILocation } from '../../components/Location'
 
 export const LocationBoxContext = createContext<LocationBoxContextProps>(locationBoxContextDefault)
 
 export const LocationBoxContextProvider: React.FC<LocationBoxContextProviderProps> = ({
   children,
 }) => {
-  const [location, setLocation] = useState<Location>()
+  const [location, setLocation] = useState<ILocation>()
   const [shouldReload, setShouldReload] = useState<boolean>(locationBoxContextDefault.shouldReload)
 
   return (

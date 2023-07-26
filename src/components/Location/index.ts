@@ -1,5 +1,5 @@
 import Location from './Location'
-import { Location } from './types'
+import { ILocation } from './types'
 
 export { Location as default }
-export type { Location }
+export type { ILocation }

@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { Form, formDefault } from './types'
-import { SEND_REVIEW } from 'api'
+import { SEND_REVIEW } from '../../api'
 import { useMutation } from '@apollo/client'
-import { ReviewShape } from 'components/Reviews'
-import { LocationBoxContext } from 'contexts/LocationBoxContext'
+import { ReviewShape } from '../Reviews'
+import { LocationBoxContext } from '../../contexts/LocationBoxContext'
 import './ReviewForm.scss'
 
 const ReviewForm: React.FC = () => {

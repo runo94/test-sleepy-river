@@ -1,17 +1,15 @@
 import { Dispatch, ReactNode, SetStateAction } from 'react'
-import { Location } from 'components/Location'
+import { ILocation } from '../../components/Location'
 
 export interface LocationBoxContextProviderProps {
   children: ReactNode
 }
 
-type SetShouldReloadType = (id: string) => void
-
 export interface LocationBoxContextProps {
-  location?: Location
-  setLocation: Dispatch<SetStateAction<Location | undefined>>
+  location?: ILocation
+  setLocation: Dispatch<SetStateAction<ILocation | undefined>>
   shouldReload: boolean
-  setShouldReload: SetShouldReloadType
+  setShouldReload: Dispatch<SetStateAction<boolean>>
 }
 
 export const locationBoxContextDefault: LocationBoxContextProps = {
