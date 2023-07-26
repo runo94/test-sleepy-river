@@ -18,3 +18,4 @@ export const locationBoxContextDefault: LocationBoxContextProps = {
   shouldReload: false,
   setShouldReload: () => void {},
 }
+ 

@@ -8,7 +8,7 @@ import useLastLocationsId from '../../hooks/useLocationsId'
 import service from './service'
 import './LocationBox.scss'
 
-const LocationBox: React.FC = () => {
+const LocationBox: React.FC = () => { 
   const { lastLocationId, getLocationsIdLoading } = useLastLocationsId()
   const { location, setLocation, shouldReload, setShouldReload } = useContext(LocationBoxContext)
 

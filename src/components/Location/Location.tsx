@@ -14,7 +14,7 @@ const Location = (loc: ILocation): ReactNode => (
       alt={loc.name}
       src={loc.photo}
     />
-
+ 
     <div>{loc.description}</div>
 
     <div className='Location__reviews'>{Reviews(loc.reviewsForLocation, 3)}</div>

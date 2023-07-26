@@ -8,3 +8,4 @@ export const Reviews = (reviews: ReviewShape[], last: number): ReactNode => (
     {reviews.slice(-last).map((rev: ReviewShape) => Review(rev))}
   </>
 )
+ 

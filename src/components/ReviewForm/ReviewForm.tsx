@@ -22,7 +22,7 @@ const ReviewForm: React.FC = () => {
         setShouldReload(true)
       }
     })
-  }
+  } 
 
   return (
     <div className='ReviewForm'>

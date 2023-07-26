@@ -13,7 +13,7 @@ const apiClient = new ApolloClient({
       fetchPolicy: 'no-cache',
     },
   },
-})
+}) 
 
 const AppContainer = (): ReactElement => (
   <ApolloProvider client={apiClient}>

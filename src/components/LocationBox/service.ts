@@ -8,7 +8,7 @@ export default class LocationBoxService {
     lastLocationId,
     getLocation,
     setLocation,
-    setShouldReload,
+    setShouldReload, 
   }: {
     lastLocationId: string
     getLocation: LazyQueryExecFunction<ApiShape.GetLocationData, ApiShape.GetLocationInput>

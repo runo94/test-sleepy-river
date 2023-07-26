@@ -11,3 +11,4 @@ export interface GetLocationData {
 export interface GetLocationInput {
   id: ILocation['id']
 }
+ 

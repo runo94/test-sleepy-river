@@ -15,4 +15,4 @@ const Review = (rev: ReviewShape): ReactNode => (
   </div>
 )
 
-export default Review
+export default Review 

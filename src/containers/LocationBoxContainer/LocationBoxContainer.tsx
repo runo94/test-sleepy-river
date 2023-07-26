@@ -6,6 +6,6 @@ const LocationBoxContainer: React.FC = () => (
   <LocationBoxContextProvider>
     <LocationBox />
   </LocationBoxContextProvider>
-)
+) 
 
 export default LocationBoxContainer

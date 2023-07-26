@@ -1,6 +1,6 @@
 import { useLazyQuery } from '@apollo/client'
 import { useEffect, useState } from 'react'
-import { GET_LOCATIONS_ID, ApiShape } from 'api'
+import { GET_LOCATIONS_ID, ApiShape } from '../../api'
 import { UseLocationsIdProps } from './types'
 
 const useLocationsId = (): UseLocationsIdProps => {

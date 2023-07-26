@@ -3,3 +3,4 @@ export interface SendReviewInput {
   rating: string
   comment: string
 }
+ 
